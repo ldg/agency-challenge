@@ -32,3 +32,8 @@ video {
   display: block;
   max-width: 100%;
 }
+
+/* remove default styles on lists */
+li {
+  list-style: none;
+}

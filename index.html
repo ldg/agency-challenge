@@ -13,7 +13,11 @@
   <link rel="stylesheet" href="./css/main.css">
 </head>
 <body>
-  <nav role="navigation" class="menubar">
+  <nav class="menubar" role="navigation" >
+    <div class="menubar__images-container">
+      <img id="logo" src="./img/desktop/logo.svg" alt="Logo">
+      <img id="hamburger" src="./img/mobile/icon-hamburger.svg" alt="Mobile menubar">
+    </div>
     <ul class="menubar__menu">
       <li><a href="#">About</a></li>
       <li><a href="#">Service</a></li>
@@ -22,8 +26,9 @@
     </ul>
   </nav>
 
-  <div role="banner" class="hero">
-    <h1>Branding & website design agency</h1>
+  <div class="hero" role="banner" >
+    <div class="hero__banner-img"></div>
+    <h1>Branding &<br/> website design </br />agency</h1>
     <p>
       We specialize in visual storytelling by creating cohesive brand and website design
       solutions for small businesses, giving lasting impressions to audiences in a digital world.
@@ -31,62 +36,62 @@
     <a href="#" class="button button__accent">Learn more</a>
   </div>
 
-  <section class="section__dark">
-    <h2>Design is strategic.</h2>
-    <p>
-      A well-crafted design strategy consistently produces desired outcomes and brand awareness.
-      We are firm believers that success lies in creative collaboration with our clients.
-    </p>
-    <a href="#" class="text-link">Schedule a call</a>
-  </section>
-
-  <section class="section__accent">
-    <h3>Our approach for creating a winning brand</h3>
-    <ul class="section__list">
-      <li>
-        <h4><span class="num">01</span>Brand strategy</h4>
-        <p>
-          Brand strategy is critical for long-term success. Outshining competitors and capturing
-          the target audience are key.
-        </p>
-      </li>
-      <li>
-        <h4><span class="num">02</span>Brand design</h4>
-        <p>
-          Keeping the brand design unique and meaningful helps in communicating the brand’s timeless
-          value effectively.
-        </p>
-      </li>
-      <li>
-        <h4><span class="num">03</span>Web design</h4>
-        <p>
-          A beautifully crafted website is the best tool for brand awareness, and ultimately results
-          in increased revenues.
-        </p>
-      </li>
-    </ul>
-  </section>
-
-  <section role="slider" class="section__slider">
-    <div class="slider_slide">
-      <h3 class="slide__title">Brand naming & guidelines</h3>
-      <p class="slide__project-title">Lean Product Roadmap</p>
-      <p class="slide__project-description">2019 project</p>
-    </div>
-
-    <div class="slider__slide">
-      <h3 class="slide__title">Brand identity & merchandise</h3>
-      <p class="slide__project-title">New Majestic Hotel</p>
-      <p class="slide__project-description">2018 Project</p>
-    </div>
+  <main class="main">
+    <section class="section__dark">
+      <div class="section__img">Some shit yo!</div>
+      <h2>Design is strategic.</h2>
+      <p>
+        A well-crafted design strategy consistently produces desired outcomes and brand awareness.
+        We are firm believers that success lies in creative collaboration with our clients.
+      </p>
+      <a href="#" class="text-link">Schedule a call</a>
+    </section>
+    <section class="section__accent">
+      <h3>Our approach for creating a winning brand</h3>
+      <ul class="section__list">
+        <li>
+          <h4><span class="num">01</span>Brand strategy</h4>
+          <p>
+            Brand strategy is critical for long-term success. Outshining competitors and capturing
+            the target audience are key.
+          </p>
+        </li>
+        <li>
+          <h4><span class="num">02</span>Brand design</h4>
+          <p>
+            Keeping the brand design unique and meaningful helps in communicating the brand’s timeless
+            value effectively.
+          </p>
+        </li>
+        <li>
+          <h4><span class="num">03</span>Web design</h4>
+          <p>
+            A beautifully crafted website is the best tool for brand awareness, and ultimately results
+            in increased revenues.
+          </p>
+        </li>
+      </ul>
+    </section>
+    <section role="slider" class="section__slider">
+      <div class="slider_slide">
+        <h3 class="slide__title">Brand naming & guidelines</h3>
+        <p class="slide__project-title">Lean Product Roadmap</p>
+        <p class="slide__project-description">2019 project</p>
+      </div>
+      <div class="slider__slide">
+        <h3 class="slide__title">Brand identity & merchandise</h3>
+        <p class="slide__project-title">New Majestic Hotel</p>
+        <p class="slide__project-description">2018 Project</p>
+      </div>
     
-    <div class="slider__slide">
-      <h3 class="slide__title">Brand identity & web design</h3>
-      <p class="slide__project-title">Crypto Dashboard</p>
-      <p class="slide__project-description">2016 Project</p>
-    </div>
-    <nav class="slider-nav" role="navigation"><img src="/img/desktop/icon-arrow-previous.svg" alt="Previous"><img src="/img/desktop/icon-arrow-next.svg" alt="Next"></nav>
-  </section>
+      <div class="slider__slide">
+        <h3 class="slide__title">Brand identity & web design</h3>
+        <p class="slide__project-title">Crypto Dashboard</p>
+        <p class="slide__project-description">2016 Project</p>
+      </div>
+      <nav class="slider-nav" role="navigation"><img src="/img/desktop/icon-arrow-previous.svg" alt="Previous"><img src="/img/desktop/icon-arrow-next.svg" alt="Next"></nav>
+    </section>
+  </main>
 
   <footer class="footer">
     <h3>Let's build something great together.</h3>

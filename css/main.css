@@ -33,33 +33,90 @@ video {
   max-width: 100%;
 }
 
+/* remove default styles on lists */
+li {
+  list-style: none;
+}
+
 :root {
-  --c-background: #fff;
-  --c-accent: #f94f4f;
-  --c-background-dark: #191921;
-  --h1: 900 5rem/5.5rem "Commissioner", sans-serif;
-  --h2: 900 3.5rem/4rem "Commissioner", sans-serif;
-  --h3: 900 1.25rem/2rem "Commissioner", sans-serif;
-  --p: 400 1.125rem/2rem "Commissioner", sans-serif;
-}
-
-h1 {
-  font: var(--h1);
-}
-
-h2 {
-  font: var(--h2);
-}
-
-h3 {
-  font: var(--h3);
-}
-
-p {
-  font: var(--p);
+  --accent-clr: hsl(0, 93%, 64%);
+  --dark-clr: hsl(240, 14%, 11%);
+  --white: hsl(0,0%,100%);
+  --black: hsl(0,0%,0%);
+  --h1-m: 900 2.5rem/2.5rem "Commissioner", sans-serif;
+  --h2-m: 900 2rem/2.5rem "Commissioner", sans-serif;
+  --h3-m: 900 0.9375rem/1.5625rem "Commissioner", sans-serif;
+  --p-m: 400 0.9375rem/1.5625rem "Commissioner", sans-serif;
+  --h1-t: 900 3.5rem/3.5rem "Commissioner", sans-serif;
+  --h2-t: 900 2rem/2.5rem "Commissioner", sans-serif;
+  --h3-t: 900 0.9375rem/1.5625rem "Commissioner", sans-serif;
+  --p-t: 400 0.9375rem/1.5625rem "Commissioner", sans-serif;
+  --h1-d: 900 5rem/5.5rem "Commissioner", sans-serif;
+  --h2-d: 900 3.5rem/4rem "Commissioner", sans-serif;
+  --h3-d: 900 1.25rem/2rem "Commissioner", sans-serif;
+  --p-d: 400 1.125rem/2rem "Commissioner", sans-serif;
 }
 
 body {
-  font-family: "Commissioner", sans-serif;
-  background-color: var(--c-background);
+  background-color: var(--white);
+}
+
+@media (max-width: 599px) {
+  h1 {
+    font: var(--h1-m);
+  }
+  h2 {
+    font: var(--h2-m);
+  }
+  h3 {
+    font: var(--h3-m);
+  }
+  p {
+    font: var(--p-m);
+  }
+  .menubar {
+    padding-top: 2.5em;
+    height: 6.25em;
+  }
+  .menubar__images-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding-inline: 1.5em;
+  }
+  .menubar__menu {
+    display: none;
+  }
+  #hamburger {
+    width: 1.5em;
+    height: 1.125em;
+  }
+  .hero {
+    padding-inline: 1.5em;
+  }
+  .hero__banner-img {
+    width: 23.4375em;
+    height: 15.625em;
+    background-image: url("../img/mobile/image-hero.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-inline: -1.5em;
+  }
+  main.main {
+    padding-inline: 1.5em;
+  }
+  .section__image {
+    width: 375px;
+    height: 200px;
+    background-image: url("../img/mobile/image-strategic.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+  }
+  footer.footer {
+    padding-inline: 1.5em;
+  }
 }

@@ -1,0 +1,24 @@
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 8.75em; //140px;
+    height: 3em; //48px;
+    background-color: var(--black);
+    color: #FFF;
+    font-family: Commissioner;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    text-decoration: none;
+    margin-top: 2.5em; //40px;
+}
+.button__accent{
+    background-color: var(--accent-clr);
+    color: var(--white);
+}
+
+.button__accent:hover {
+    background-color: hsla(0, 100%, 79%, 1);
+}

@@ -18,12 +18,16 @@
       <img id="logo" src="./img/desktop/logo.svg" alt="Logo">
       <img id="hamburger" src="./img/mobile/icon-hamburger.svg" alt="Mobile menubar">
     </div>
-    <ul class="menubar__menu">
-      <li><a href="#">About</a></li>
-      <li><a href="#">Service</a></li>
-      <li><a href="#">Projects</a></li>
-      <li><a href="#" class="button">Schedule a call</a></li>
-    </ul>
+    <div class="menubar__menu-container">
+      <ul class="menubar__menu">
+        <li><a href="#">About</a></li>
+        <li><a href="#">Service</a></li>
+        <li><a href="#">Projects</a></li>
+        <li class="menubar-button">
+          <a href="#" class="button button__accent">Schedule a call</a>
+        </li>
+      </ul>
+    </div>
   </nav>
 
   <div class="hero" role="banner" >
@@ -40,9 +44,9 @@
 
   <main class="main">
     <section class="section__dark">
-      <img id="red-wave" src="./img/desktop/bg-pattern-wave-red.svg" role="img" alt="Red Wave graphic">
       <div class="section__dark-img"></div>
       <div class="section__dark-content">
+        <img id="red-wave" src="./img/desktop/bg-pattern-wave-red.svg" role="img" alt="Red Wave graphic">
         <h2><span>Design</span> is strategic.</h2>
         <p>
           A well-crafted design strategy consistently produces desired outcomes and brand awareness.
@@ -52,8 +56,8 @@
       </div>
     </section>
     <section class="section__accent">
+      <h2>Our approach for creating a winning brand</h2>
       <div class="section__accent-content">
-        <h2>Our approach for creating a winning brand</h2>
         <ul class="section__list">
           <li>
             <h3><span></span>Brand strategy</h3>
@@ -79,9 +83,11 @@
         </ul>
       </div>
     </section>
-    <section role="slider" class="section__slider">
+
+    <section class="section__slider" role="slider" >
       <div class="slide__container">
-        <div class="slider__slide slider__slide-active" data-slide="1">
+        <img id="whitewave" src="./img/desktop/bg-pattern-wavy-white.svg" alt="White Wave graphic">
+        <div id="slide1" class="slider__slide" data-slide="one">
           <div class="slide__img">
             <div class="slide__img-meta">
               <p class="slide__project-title">Lean Product Roadmap</p>
@@ -92,7 +98,7 @@
             <h3>Brand naming & guidelines</h3>
           </div>
         </div>
-        <div class="slider__slide" data-slide="2">
+        <div id="slide2" class="slider__slide" data-slide="two">
           <div class="slide__img">
             <div class="slide__img-meta">
               <p class="slide__project-title">New Majestic Hotel</p>
@@ -103,7 +109,7 @@
             <h3>Brand identity & merchandise</h3>
           </div>
         </div>
-        <div class="slider__slide" data-slide="3">
+        <div id="slide3" class="slider__slide" data-slide="three">
           <div class="slide__img">
             <div class="slide__img-meta">
               <p class="slide__project-title">Crypto Dashboard</p>
@@ -115,7 +121,7 @@
           </div>
         </div>
       </div>
-      <nav class="slider__nav" role="navigation"><img data-slidenav="previous" src="/img/desktop/icon-arrow-previous.svg" alt="Previous"><img data-slidenav="next" src="/img/desktop/icon-arrow-next.svg" alt="Next"></nav>
+      <nav class="slider__nav" role="navigation"><img id="prev" data-slidenav="prev" src="/img/desktop/icon-arrow-previous.svg" alt="Previous"><img id="next" data-slidenav="next" src="/img/desktop/icon-arrow-next.svg" alt="Next"></nav>
     </section>
   </main>
 
@@ -123,5 +129,6 @@
     <h3>Let's build something great together.</h3>
     <a href="#" class="button button__accent">Schedule a Call</a>
   </footer>
+  <script src="./js/scripts.js"></script>
 </body>
 </html>

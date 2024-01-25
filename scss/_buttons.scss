@@ -17,8 +17,17 @@
 .button__accent{
     background-color: var(--accent-clr);
     color: var(--white);
+    transition: all .5s;
 }
 
 .button__accent:hover {
     background-color: hsla(0, 100%, 79%, 1);
+}
+
+// slider buttons
+img#prev,
+img#next {
+    cursor: pointer;
+    margin-right: 1em;
+    
 }

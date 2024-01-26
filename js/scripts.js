@@ -36,14 +36,14 @@ let curSlide = 0; // current slide counter
 let maxSlide = slides.length - 1; // maximum number of slides
 
 // loop through slides and set each slides translateX property to index * 100% 
-slides.forEach((slide, indx) => {
-  slide.style.transform = `translateX(${indx * 100}%)`;
+slides.forEach((slide, index) => {
+  slide.style.transform = `translateX(${index * 100}%)`;
 });
 
 // set slide position by updating the index number
 function moveSlide() {
-   slides.forEach((slide, indx) => {
-    slide.style.transform = `translateX(${100 * (indx - curSlide)}%)`;
+   slides.forEach((slide, index) => {
+    slide.style.transform = `translateX(${100 * (index - curSlide)}%)`;
   });
 }
 

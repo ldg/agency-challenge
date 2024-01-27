@@ -109,6 +109,7 @@ img.whitewave {
   -webkit-transform: rotateY(190deg);
           transform: rotateY(190deg);
   position: absolute;
+  right: -2em;
 }
 
 img#whitewave {
@@ -608,7 +609,6 @@ img#footer-red-wave {
     z-index: 2;
     width: 62px;
     top: 7.4em;
-    left: 23.9em;
   }
   .section__slider .slide__container .slider__slide:nth-child(2) .slide__img {
     background-image: url("../img/tablet/image-slide-1.jpg");
@@ -773,7 +773,6 @@ img#footer-red-wave {
   }
   .section__slider .slide__container .slider__slide .slide__title img.whitewave {
     width: 6rem;
-    left: 37.2rem;
   }
   .section__slider .slide__container .slider__slide .slide__title h3 {
     font-size: 3.2rem;
@@ -818,7 +817,6 @@ img#footer-red-wave {
   }
   .section__slider .slide__container .slider__slide .slide__title img.whitewave {
     width: 6rem;
-    left: 47.2rem;
     top: 13em;
   }
   .section__slider .slide__container .slider__slide:nth-child(2) .slide__img,
@@ -840,15 +838,6 @@ img#footer-red-wave {
 @media (min-width: 1600px) {
   .section__slider .slide__container .slider__slide .slide__title img.whitewave {
     width: 6rem;
-    left: 52.2rem;
-    top: 12em;
-  }
-}
-/* for Retinal Screen iMac 27" display */
-@media only screen and (-webkit-min-device-pixel-ratio: 1.25), only screen and (min-device-pixel-ratio: 1.25), only screen and (-webkit-min-device-pixel-ratio: 2.0833333333333335), only screen and (min-resolution: 200dpi), only screen and (min-resolution: 1.25dppx) {
-  .section__slider .slide__container .slider__slide .slide__title img.whitewave {
-    width: 6rem;
-    left: 68.2rem;
     top: 12em;
   }
 }

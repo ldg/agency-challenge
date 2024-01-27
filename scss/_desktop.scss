@@ -1,0 +1,158 @@
+@media (min-width: 992px) {
+
+    .menubar {
+        grid-template-columns: 1fr .9fr;
+    }
+
+    .hero {
+        background-image: url('../img/desktop/image-hero.jpg');
+    }
+
+    .section__dark {
+        grid-template-columns: 1fr .9fr;
+        background-image: url('../img/desktop/image-strategic.jpg');
+        background-size: 53%;
+        height: 61rem;
+            .section__dark-content {
+                padding-right: 6.5rem;
+                display: grid;
+                align-content: center;
+                    img#red-wave {
+                        top: 24em;
+                    }
+            }
+    }
+}
+
+/* extra wide screens */
+@media (min-width: 1200px) {
+
+    h1 {
+    font: var(--h1-d);
+    }
+    h2{
+        font: var(--h2-d);
+    }
+    h3 {
+        font: var(--h3-d);
+    }
+    p {
+        font: var(--p-d);
+    }
+
+    .menubar {
+            .menubar__images-container {
+                margin-left: 10.31rem;
+            }
+            .menubar__menu-container {
+                padding-right: 10.31rem;
+            }
+    }
+
+    .hero {
+        grid-template-columns: 45.625rem 1fr;
+        .hero__banner-content {
+            margin-left: 10.31rem;
+        }
+    }
+
+    .section__dark {
+            .section__dark-content {
+                margin-left: 0;
+                padding-block: 12.5em;
+                padding-left: 9.63rem;
+                display: block;
+                    img#red-wave {
+                        left: -3.4em;
+                        top: 14.3em;
+                        width: 6rem;
+                        height: auto;
+                    }
+                    p {
+                        margin-top: 2.69rem;
+                    }
+                    a {
+                        margin-top: 3rem;
+                    }
+            }
+    }
+
+    .section__accent {
+        grid-template-columns: repeat(7,1fr);
+            h2 {
+                    width: 115%;
+                    margin-left: 10.32rem;
+                    z-index: 3;
+                    font-size: 3.2rem;
+                    line-height: 4rem;
+                }
+            .section__accent-content {
+                padding-right: 6.25rem;
+                padding-left: 21.5rem;
+                margin-top: -13rem;
+            }
+    }
+
+    .section__accent-content .section__list li:nth-child(1) h3 span::before,
+    .section__accent-content .section__list li:nth-child(2) h3 span::before,
+    .section__accent-content .section__list li:nth-child(3) h3 span::before {
+        margin-left: -0.5em;
+    }
+
+    .section__slider {
+        nav.slider__nav{
+            top: 16.5em;
+            padding-left: 10.31rem;
+        }
+        .slide__container {
+            img#whitewave {
+                width: 6rem;
+                left: 37.2rem;
+            }
+            .slider__slide:nth-child(2) .slide__img {
+                background-image: url('../img/desktop/image-slide-1.jpg');
+                background-size: 100%;
+            }
+            .slider__slide:nth-child(3) .slide__img {
+                background-image: url('../img/desktop/image-slide-2.jpg');
+                background-size: 100%;
+            }
+            .slider__slide:nth-child(4) .slide__img {
+                background-image: url('../img/desktop/image-slide-3.jpg');
+                background-size: 100%;
+            }
+            .slider__slide {
+                .slide__img {
+                    .slide__img-meta {
+                        padding-right: 5em;
+                    }
+                }
+                .slide__title {
+                    padding-left: 10.31em;
+                    height: 25em;
+                    h3 {
+                        font-size: 3.2rem;
+                        line-height: 4rem;
+                    }
+                }
+            }
+        }
+    }
+
+    footer.footer {
+        display: flex;
+        justify-content: space-between;
+        .button.button__accent {
+            margin-right: 3em;
+        }
+        img#footer-red-wave {
+            margin-left: -7em;
+            display: block;
+        }
+        h3 {
+            font: var(--h2-t);
+        }
+    }
+
+    
+}

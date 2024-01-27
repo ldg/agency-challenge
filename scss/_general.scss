@@ -5,9 +5,19 @@ body {
 .menubar__menu li a {
     text-decoration: none;
 }
-img#whitewave {
+img.whitewave {
     transform: rotateY(190deg);
+    position: absolute;
 }
+img#whitewave{
+    display: none;
+}
+/* Hide this on smaller screens until 
+needed on wide screen*/
 img#footer-red-wave {
     display: none;
+}
+
+.slide__title {
+    position: relative;
 }

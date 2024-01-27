@@ -105,13 +105,24 @@ body {
   text-decoration: none;
 }
 
-img#whitewave {
+img.whitewave {
   -webkit-transform: rotateY(190deg);
           transform: rotateY(190deg);
+  position: absolute;
 }
 
+img#whitewave {
+  display: none;
+}
+
+/* Hide this on smaller screens until 
+needed on wide screen*/
 img#footer-red-wave {
   display: none;
+}
+
+.slide__title {
+  position: relative;
 }
 
 @media (max-width: 469px) {
@@ -553,13 +564,6 @@ img#footer-red-wave {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
   }
-  .section__slider .slide__container img#whitewave {
-    z-index: 2;
-    width: 62px;
-    position: absolute;
-    top: 7.4em;
-    left: 23.9em;
-  }
   .section__slider .slide__container .slider__slide {
     position: absolute;
     -webkit-transition: all 0.5s;
@@ -599,6 +603,12 @@ img#footer-red-wave {
     padding-left: 2.4375em;
     grid-column: 1/8;
     grid-row: 1;
+  }
+  .section__slider .slide__container .slider__slide .slide__title img.whitewave {
+    z-index: 2;
+    width: 62px;
+    top: 7.4em;
+    left: 23.9em;
   }
   .section__slider .slide__container .slider__slide:nth-child(2) .slide__img {
     background-image: url("../img/tablet/image-slide-1.jpg");
@@ -742,10 +752,6 @@ img#footer-red-wave {
     top: 16.5em;
     padding-left: 10.31rem;
   }
-  .section__slider .slide__container img#whitewave {
-    width: 6rem;
-    left: 37.2rem;
-  }
   .section__slider .slide__container .slider__slide:nth-child(2) .slide__img {
     background-image: url("../img/desktop/image-slide-1.jpg");
     background-size: 100%;
@@ -764,6 +770,10 @@ img#footer-red-wave {
   .section__slider .slide__container .slider__slide .slide__title {
     padding-left: 10.31em;
     height: 25em;
+  }
+  .section__slider .slide__container .slider__slide .slide__title img.whitewave {
+    width: 6rem;
+    left: 37.2rem;
   }
   .section__slider .slide__container .slider__slide .slide__title h3 {
     font-size: 3.2rem;
@@ -806,6 +816,11 @@ img#footer-red-wave {
         align-content: center;
     display: grid;
   }
+  .section__slider .slide__container .slider__slide .slide__title img.whitewave {
+    width: 6rem;
+    left: 47.2rem;
+    top: 13em;
+  }
   .section__slider .slide__container .slider__slide:nth-child(2) .slide__img,
   .section__slider .slide__container .slider__slide:nth-child(3) .slide__img,
   .section__slider .slide__container .slider__slide:nth-child(4) .slide__img {
@@ -813,9 +828,8 @@ img#footer-red-wave {
     height: 195%;
     background-position: top left;
   }
-  .section__slider .slide__container img#whitewave {
-    width: 6rem;
-    left: 47.2rem;
+  footer.footer {
+    margin-top: 5em;
   }
   footer.footer h3 {
     font: var(--h2-d);
@@ -824,9 +838,17 @@ img#footer-red-wave {
 }
 /* extra wide screens 1600+ */
 @media (min-width: 1600px) {
-  .section__slider .slide__container img#whitewave {
+  .section__slider .slide__container .slider__slide .slide__title img.whitewave {
     width: 6rem;
-    left: 62.2rem;
+    left: 52.2rem;
+    top: 12em;
+  }
+}
+/* for Retinal Screen iMac 27" display */
+@media only screen and (-webkit-min-device-pixel-ratio: 1.25), only screen and (min-device-pixel-ratio: 1.25), only screen and (-webkit-min-device-pixel-ratio: 2.0833333333333335), only screen and (min-resolution: 200dpi), only screen and (min-resolution: 1.25dppx) {
+  .section__slider .slide__container .slider__slide .slide__title img.whitewave {
+    width: 6rem;
+    left: 68.2rem;
     top: 12em;
   }
 }

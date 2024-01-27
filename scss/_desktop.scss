@@ -105,10 +105,6 @@
             padding-left: 10.31rem;
         }
         .slide__container {
-            img#whitewave {
-                width: 6rem;
-                left: 37.2rem;
-            }
             .slider__slide:nth-child(2) .slide__img {
                 background-image: url('../img/desktop/image-slide-1.jpg');
                 background-size: 100%;
@@ -130,6 +126,10 @@
                 .slide__title {
                     padding-left: 10.31em;
                     height: 25em;
+                    img.whitewave {
+                        width: 6rem;
+                        left: 37.2rem;
+                    }
                     h3 {
                         font-size: 3.2rem;
                         line-height: 4rem;
@@ -175,6 +175,11 @@
                         padding-block: 15em;
                         align-content: center;
                         display: grid;
+                        img.whitewave {
+                            width: 6rem;
+                            left: 47.2rem;
+                            top: 13em;
+                        }
                     }
             }
             .slider__slide:nth-child(2) .slide__img,
@@ -184,18 +189,15 @@
                 height: 195%;
                 background-position: top left;
             }
-            img#whitewave {
-                width: 6rem;
-                left: 47.2rem;
-            }
         }
     }
 
     footer.footer {
-        h3{
-            font: var(--h2-d);
-            width: 50%;
-        }
+        margin-top: 5em;
+            h3{
+                font: var(--h2-d);
+                width: 50%;
+            }
     }
 
 }
@@ -204,10 +206,37 @@
 @media(min-width: 1600px) {
     .section__slider {
         .slide__container {
-            img#whitewave {
-                width: 6rem;
-                left: 62.2rem;
-                top: 12em;
+            .slider__slide{
+                .slide__title {
+                    img.whitewave {
+                        width: 6rem;
+                        left: 52.2rem;
+                        top: 12em;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* for Retinal Screen iMac 27" display */
+@media
+only screen and (-webkit-min-device-pixel-ratio: 1.25),
+only screen and ( min--moz-device-pixel-ratio: 1.25),
+only screen and ( -o-min-device-pixel-ratio: 1.25/1),
+only screen and ( min-device-pixel-ratio: 1.25),
+only screen and ( min-resolution: 200dpi),
+only screen and ( min-resolution: 1.25dppx) {
+    .section__slider {
+        .slide__container {
+            .slider__slide{
+                .slide__title {
+                    img.whitewave {
+                        width: 6rem;
+                        left: 68.2rem;
+                        top: 12em;
+                    }
+                }
             }
         }
     }

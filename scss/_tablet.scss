@@ -184,13 +184,6 @@
         .slide__container {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
-            img#whitewave {
-                z-index: 2;
-                width: 62px;
-                position: absolute;
-                top: 7.4em;
-                left: 23.9em;
-            }
             .slider__slide {
                 position: absolute;
                 transition: all 0.5s;
@@ -224,6 +217,12 @@
                     padding-left: 2.4375em; //39px
                     grid-column: 1/8;
                     grid-row: 1;
+                        img.whitewave {
+                            z-index: 2;
+                            width: 62px;
+                            top: 7.4em;
+                            left: 23.9em;
+                        }
                 }
             }
             .slider__slide:nth-child(2) .slide__img {

@@ -101,5 +101,5 @@ I feel my command of Javascript is my biggest weakness, so I'll be looking to im
 ## Author
 
 - Website - [Scott McIntire](https://ldgwebdesign.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/ldg)
+- Frontend Mentor - [@ldg](https://www.frontendmentor.io/profile/ldg)
 
